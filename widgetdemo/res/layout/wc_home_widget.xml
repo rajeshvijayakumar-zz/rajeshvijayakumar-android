@@ -1,0 +1,38 @@
+<RelativeLayout android:id="@+id/widget_layout" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#08458c" >
+
+    <TextView
+        android:id="@+id/widget_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+		android:layout_margin="5dp"
+        android:text="12:00 PM"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/day_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/widget_textView"
+        android:layout_below="@+id/widget_textView"
+        android:layout_marginTop="16dp"
+        android:text="Day"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/day_textView"
+        android:layout_alignBottom="@+id/day_textView"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/day_textView"
+        android:text="currentDate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

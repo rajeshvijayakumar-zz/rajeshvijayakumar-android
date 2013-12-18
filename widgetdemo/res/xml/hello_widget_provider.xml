@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	AppWidget default settings:
+	- setting width and hight
+	- setting update periode to 1 second
+	- setting the initialLayout to layout/widget_text.xml
+-->
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="146dip"
+    android:minHeight="72dip"
+    android:resizeMode="vertical|horizontal"
+    android:updatePeriodMillis="10000"
+    android:initialLayout="@layout/wc_home_widget"
+    />
