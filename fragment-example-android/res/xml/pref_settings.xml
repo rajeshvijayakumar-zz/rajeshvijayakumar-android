@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:persistent="true"
+        android:title="Networks" >
+        <SwitchPreference
+            android:key="wifi_nw"
+            android:icon="@android:drawable/ic_secure"
+            android:layout="?android:attr/widgetLayout"
+            android:summary="Wifi  On / Off"
+            android:title="Wi-Fi" />
+        <SwitchPreference
+            android:key="mob_nw"
+            android:icon="@android:drawable/ic_secure"
+            android:layout="?android:attr/widgetLayout"
+            android:summary="Mobile  On / Off"
+            android:title="Mobile" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:persistent="true"
+        android:title="Device" >
+        <Preference
+            android:key="device_id_preference"
+            android:layout="?android:attr/widgetLayout"
+            android:summary="IMEI08372974894"
+            android:title="Device Id" />
+        <Preference
+            android:key="date_time_preference"
+            android:layout="?android:attr/widgetLayout"
+            android:summary="Set current date time"
+            android:title="Date and Time" />
+        <Preference
+            android:key="others_preference"
+            android:layout="?android:attr/widgetLayout"
+            android:summary=""
+            android:title="Others" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
